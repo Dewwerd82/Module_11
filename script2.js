@@ -76,7 +76,7 @@ document.getElementById("Game").addEventListener('click', function() {
     minValue = parseInt(document.getElementById('MinValue').value);
     maxValue = parseInt(document.getElementById('MaxValue').value);
     num = parseInt(document.getElementById('input').value);
-    if (typeof num === 'number' && !isNaN(num) &&
+    if (typeof num === 'number' && !isNaN(num) && minValue < num < maxValue &&
         typeof minValue === 'number' && !isNaN(minValue) &&
         typeof maxValue === 'number' && !isNaN(maxValue) && maxValue > minValue &&
         maxValue != 0) {
