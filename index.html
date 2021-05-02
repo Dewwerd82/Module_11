@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадайка</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="conmain">
+            <h2 id="orderNumberField">Угадайка</h2>
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" id="btn">Поехали ....&#129047;</button>
+            <div id="demo" class="collapse">
+                <div class="collapseP">
+                    <h3 id="answerField">Введите диапазон от - 999 до + 999</h3>
+                    <form>
+                        <label>
+                            Min
+                            <input type="text" placeholder="-999" id="MinValue"  class="minVal" value="-999">
+                        </label>
+                        <label>
+                            Max
+                            <input type="text" placeholder="999" id="MaxValue"  class="maxVal" value="999">
+                        </label>
+
+                    </form>
+                    <p>
+                        <label>
+                            Введите число из этого диапазона:
+                            <input type="text" placeholder="0" id="input" value="0">
+                        </label>
+
+                    </p>
+                    <p>
+                        <span id="numText">Вы ввели :</span>
+                    </p>
+                    <p>
+                        <button class="Game" id="Game">
+                            Играть
+                        </button>
+
+                        <button class="News" id="btnRetry">
+                            Заново
+                        </button>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script2.js"></script>
+<script src="script.js"></script>
+
+</html>
